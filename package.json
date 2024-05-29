@@ -8,6 +8,7 @@
     "lint:fix": "eslint . --cache --fix",
     "format": "prettier --write .",
     "test:unit": "jest",
+    "test:e2e": "cypress open",
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "prepare": "husky install"
@@ -19,7 +20,9 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
     "@eslint/js": "^9.3.0",
+    "cypress": "^13.10.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-cypress": "^3.3.0",
     "eslint-plugin-jest": "^28.5.0",
     "globals": "^15.3.0",
     "husky": "^9.0.11",
