@@ -27,6 +27,14 @@
       "globals": {
         "global": "readonly"
       }
+    },
+    {
+      "files": ["cypress.config.js"],
+      "env": { "node": true },
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off"
+      }
     }
   ],
   "parserOptions": {
