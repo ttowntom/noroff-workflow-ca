@@ -22,5 +22,11 @@ describe("Noroff social logout", () => {
       "have.text",
       "Please register or login to view this page.",
     );
+
+    // Check the token in local storage after successful logout
+    cy.window().then((win) => {
+      const token = win.localStorage.getItem("token");
+      expect(token).to.be.null;
+    });
   });
 });
