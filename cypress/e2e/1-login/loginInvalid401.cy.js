@@ -1,5 +1,5 @@
 describe("Noroff social invalid login (wrong password)", () => {
-  it("can log in with the login form with valid credentials", () => {
+  it("can not log in with the login form with invalid credentials", () => {
     cy.visit("/");
     cy.wait(500);
     cy.get('button[data-auth="login"]').last().click();
