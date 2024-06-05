@@ -1,6 +1,6 @@
 describe("Noroff social valid login", () => {
   it("can log in with the login form with valid credentials", () => {
-    cy.visit("http://127.0.0.1:5500/");
+    cy.visit("/");
     cy.wait(500);
     cy.get('button[data-auth="login"]').last().click();
     cy.wait(500);
